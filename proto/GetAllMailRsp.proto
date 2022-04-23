@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+import "MailData.proto";
+
+message GetAllMailRsp {
+  int32 retcode = 1;
+  repeated MailData mailList = 2;
+  bool isTruncated = 3;
+}
