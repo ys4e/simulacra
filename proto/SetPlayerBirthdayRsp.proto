@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+import "proto/Birthday.proto";
+
+message SetPlayerBirthdayRsp {
+	Birthday birth = 1;
+}
