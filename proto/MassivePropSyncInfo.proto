@@ -6,5 +6,5 @@ import "MassivePropParam.proto";
 
 message MassivePropSyncInfo {
 	int64 id = 1;
-	map<int32, MassivePropParam> propMap = 2;
+	repeated MassivePropParam prop_list = 2;
 }

@@ -5,6 +5,6 @@ option java_package = "emu.grasscutter.net.proto";
 import "AnimatorParameterValueInfo.proto";
 
 message AnimatorParameterValueInfoPair {
-	int32 name = 1;
-	AnimatorParameterValueInfo animatorPara = 2;
+	int32 name_id = 1;
+	AnimatorParameterValueInfo animator_para = 2;
 }

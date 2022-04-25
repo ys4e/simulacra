@@ -6,5 +6,5 @@ import "ItemParam.proto";
 
 message GachaTransferItem {
 	ItemParam item = 1;
-	bool isTransferItemNew = 2;
+	bool is_transfer_item_new = 2;
 }
