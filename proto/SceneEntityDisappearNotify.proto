@@ -5,6 +5,14 @@ option java_package = "emu.grasscutter.net.proto";
 import "VisionType.proto";
 
 message SceneEntityDisappearNotify {
-	repeated uint32 entityList = 1;
-	VisionType disappearType = 2;
+	enum CmdId {
+		option allow_alias = true;
+		NONE = 0;
+		ENET_CHANNEL_ID = 0;
+		ENET_IS_RELIABLE = 1;
+		CMD_ID = 294;
+	}
+
+	repeated uint32 entity_list = 1;
+	VisionType disappear_type = 2;
 }

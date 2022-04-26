@@ -2,7 +2,8 @@ syntax = "proto3";
 
 option java_package = "emu.grasscutter.net.proto";
 
+
 message PacketHead {
-	uint32 clientSequenceId = 3;
+	uint32 client_sequence_id = 3;
 	uint64 timestamp = 6;
 }

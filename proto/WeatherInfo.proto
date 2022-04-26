@@ -2,6 +2,6 @@ syntax = "proto3";
 
 option java_package = "emu.grasscutter.net.proto";
 
-message ReadMailNotify {
-  repeated uint32 mailIdList = 1;
+message WeatherInfo {
+	uint32 weather_area_id = 1;
 }

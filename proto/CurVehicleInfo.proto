@@ -2,6 +2,7 @@ syntax = "proto3";
 
 option java_package = "emu.grasscutter.net.proto";
 
-message GetMailItemReq {
-  repeated uint32 mailIdList = 1;
+message CurVehicleInfo {
+	uint32 entity_id = 1;
+	uint32 pos = 2;
 }
