@@ -6,9 +6,9 @@ import "OnlinePlayerInfo.proto";
 
 message ScenePlayerInfo {
 	uint32 uid = 1;
-	uint32 peerId = 2;
+	uint32 peer_id = 2;
 	string name = 3;
-	bool isConnected = 4;
-	uint32 sceneId = 5;
-	OnlinePlayerInfo onlinePlayerInfo = 6;
+	bool is_connected = 4;
+	uint32 scene_id = 5;
+	OnlinePlayerInfo online_player_info = 6;
 }

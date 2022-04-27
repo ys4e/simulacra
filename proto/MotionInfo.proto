@@ -2,8 +2,8 @@ syntax = "proto3";
 
 option java_package = "emu.grasscutter.net.proto";
 
-import "MotionState.proto";
 import "Vector.proto";
+import "MotionState.proto";
 
 message MotionInfo {
 	Vector pos = 1;
@@ -11,8 +11,8 @@ message MotionInfo {
 	Vector speed = 3;
 	MotionState state = 4;
 	repeated Vector params = 5;
-	Vector refPos = 6;
-	uint32 refId = 7;
-	uint32 sceneTime = 8;
-	uint32 intervalVelocity = 9;
+	Vector ref_pos = 6;
+	uint32 ref_id = 7;
+	uint32 scene_time = 8;
+	uint32 interval_velocity = 9;
 }

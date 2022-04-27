@@ -2,7 +2,17 @@ syntax = "proto3";
 
 option java_package = "emu.grasscutter.net.proto";
 
+
 message UnlockAvatarTalentReq {
-	uint64 avatarGuid = 1;
-	uint32 talentId = 2;
+	enum CmdId {
+		option allow_alias = true;
+		ENET_CHANNEL_ID = 0;
+		NONE = 0;
+		ENET_IS_RELIABLE = 1;
+		IS_ALLOW_CLIENT = 1;
+		CMD_ID = 1049;
+	}
+
+	uint64 avatar_guid = 1;
+	uint32 talent_id = 2;
 }

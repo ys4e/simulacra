@@ -6,5 +6,5 @@ import "MaterialDeleteInfo.proto";
 
 message Material {
 	uint32 count = 1;
-	MaterialDeleteInfo deleteInfo = 2;
+	MaterialDeleteInfo delete_info = 2;
 }

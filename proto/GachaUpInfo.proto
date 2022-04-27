@@ -2,7 +2,8 @@ syntax = "proto3";
 
 option java_package = "emu.grasscutter.net.proto";
 
+
 message GachaUpInfo {
-	uint32 itemParentType = 1;
-	repeated uint32 itemIdList = 2;
+	uint32 item_parent_type = 1;
+	repeated uint32 item_id_list = 2;
 }

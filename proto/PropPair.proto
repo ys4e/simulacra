@@ -6,5 +6,5 @@ import "PropValue.proto";
 
 message PropPair {
 	uint32 type = 1;
-	PropValue propValue = 2;
+	PropValue prop_value = 2;
 }
