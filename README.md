@@ -14,7 +14,7 @@ The standard convention for naming is `[category/useful group][action/brief desc
   - Example: `Cs` means the `Client` is sending a packet to the `server`. (notice the Uppercase/lowercase letters?)
   - Another example: `Sc` means the `Server` is sending a packet to the `client`.
   - This is regardless of packet type. (requests can be sent from the server too!)
-- `**` - A three character (except for `Notify`) abbreviation is used for indication the packet type.
+- `**` - A three-character (except for `Notify`) abbreviation is used for indication the packet type.
   - A request packet, or `Req`, is a request for data from the other end of the connection.
   - A response packet, or `Rsp`, is the formal response containing the data requested in a `Req` packet.
   - A notification packet, or `Notify`, is a packet that can be pushed to the receiver without the need for a formal request/response.
