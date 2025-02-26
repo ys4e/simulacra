@@ -1,2 +1,6 @@
+.idea/
+
+nameTranslation*.txt
+
 proto/auto/
 proto/protoc.exe

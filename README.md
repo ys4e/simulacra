@@ -6,7 +6,7 @@ Open source, libre mappings for anime game, as well as the tools to generate the
 
 Names used in Simulacra *must be* ***non-proprietary names***, including their inspirations. You **cannot** use existing names as the inspiration for a Simulacra name.
 
-The reason for this rule is because all Simulacra names are *dedicated to the public domain* when they are included in this repository. Without the consent of all parties, one cannot add a name from another person (even if the name was unique, but inspired by someone else!) to the main repository.
+The reason for this rule is that all Simulacra names are *dedicated to the public domain* when they are included in this repository. Without the consent of all parties, one cannot add a name from another person (even if the name was unique, but inspired by someone else!) to the main repository.
 
 The standard convention for naming is `[category/useful group][action/brief descriptor][client/server*][request/response/notify**]`.
 

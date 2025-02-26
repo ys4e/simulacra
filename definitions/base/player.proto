@@ -1,0 +1,79 @@
+syntax = "proto3";
+
+import "define.proto";
+
+// Messages in this file are related directly to the player.
+package simulacra.player;
+
+// This message is sent by the client to authenticate with the server.
+// This includes account-specific data, such as the account's ID and token.
+//
+// The client expects a `PlayerHandshakeScRsp` in response.
+message PlayerHandshakeCsReq {
+  optional string acc_extension = 1;
+  optional string acc_token = 2;
+  optional uint32 service_id = 3;
+  optional bool guest = 4;
+  optional string psn_region = 5;
+  optional uint32 region_id = 6;
+  optional string acc_id = 7;
+  optional uint32 key_type = 8;
+  optional define.AccountType account_type = 9;
+  optional uint32 extern_ip = 10;
+  optional uint32 minimum_registration_age = 11;
+  optional uint32 user_id = 12;
+  optional string identifier = 13;
+  optional string birthday = 14;
+  optional string client_ip_address = 15;
+  optional define.PlatformType platform_type = 16;
+
+  // This value is a Base64-encoded byte array.
+  optional string client_secret = 17;
+
+  optional string country = 18;
+  optional define.Language language = 19;
+  optional string psn_id = 20;
+  optional string proxy_token = 21;
+}
+
+// This message is sent by the server in response to a `PlayerHandshakeCsReq`.
+//
+// This does not necessarily indicate success; the `retcode` field can be included
+// to signify an error or authentication failure.
+message PlayerHandshakeScRsp {
+  optional uint32 minimum_registration_age = 1;
+  optional uint32 service_id = 2;
+  optional define.PlatformType platform_type = 3;
+  optional string acc_id = 4;
+  optional bool whitelist_enabled = 5;
+  optional bool guest = 6;
+  optional uint32 ban_end_timestamp = 7;
+  optional bool suspicious_player = 8;
+  optional string psn_id = 9;
+  optional string tag = 10;
+  optional string country = 11;
+  optional string token = 12;
+  optional uint32 region_id = 13;
+  optional bytes crypto_check_response = 14;
+  optional string protocol_secret = 15;
+  optional string birthday = 16;
+  optional uint64 encryption_seed = 17;
+  optional define.AccountType account_type = 18;
+  optional string message = 19;
+  repeated uint32 finished_collections = 20;
+  optional string signature = 21;
+  optional string secret = 22;
+  optional define.MaintenanceInfo maintenance_info = 23;
+  optional define.ResponseCode response_code = 24;
+  optional uint32 user_id = 25;
+  optional bool regular_player = 26;
+  optional define.PlatformType regular_platform = 27;
+
+  // This value is a Base64-encoded byte array.
+  optional string server_secret = 28;
+
+  optional bytes extra_data = 29;
+  optional string client_ip_address = 30;
+  optional uint32 owner_user_id = 31;
+  optional uint32 key_type = 32;
+}

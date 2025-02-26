@@ -30,7 +30,7 @@ function compare(id, header, data) {
         if (token(id, fieldId, value)) continue;
 
         // TODO: For this method to work, we need to ensure that it
-        // only gets called on the 'PlayerHandshakeCsReq' packet.
+        // TODO: only gets called on the 'PlayerHandshakeCsReq' packet.
         // if (encryptedSeed(id, fieldId, value)) continue;
     }
 

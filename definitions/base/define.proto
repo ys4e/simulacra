@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+// Messages in this file define schemas for other messages to include.
+package simulacra.define;
+
+// The types of accounts that are available.
+enum AccountType {
+  Account_Guest = 0;
+  Account_Standard = 1;
+}
+
+// The various platforms that the game can be played on.
+enum PlatformType {
+  Platform_Unknown = 0;
+  Platform_iOS = 1;
+  Platform_Android = 2;
+  Platform_PC = 3;
+}
+
+// The languages compatible with the game.
+enum Language {
+  Language_None = 0;
+  Language_English = 1;
+}
+
+// Codes used to indicate the status of a response packet.
+enum ResponseCode {
+  Response_Success = 0;
+  Response_Server_Failure = -1;
+}
+
+// Information about the maintenance status of the server.
+message MaintenanceInfo {
+  optional uint32 maintenance_start_time = 1;
+  optional uint32 maintenance_end_time = 2;
+  optional string information_url = 3;
+  optional string information_message = 4;
+}
