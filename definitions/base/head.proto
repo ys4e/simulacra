@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+// This file includes a single message: the packet header.
+package simulacra.head;
+
+// Metadata about the packet.
+//
+// This is sent alongside the actual data.
+message Header {
+  uint32 packet_id = 1;
+  uint32 sequence_id = 3;
+  uint32 reliable = 5;
+  uint64 timestamp = 6;
+}
