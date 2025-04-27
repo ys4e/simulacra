@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+import "define.proto";
+
+// Messages in this file are related directly to the gacha/wishing system.
+package simulacra.gacha;

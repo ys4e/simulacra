@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+import "define.proto";
+
+// Messages in this file are related directly to world management packets.
+package simulacra.world;
