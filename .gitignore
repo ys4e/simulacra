@@ -1,6 +1,13 @@
+# IDEs
 .idea/
+.vscode/
 
+# Sensitive materials
 nameTranslation*.txt
 
+# Output files
+base.pb
+
+# Protobuf compiler
 proto/auto/
 proto/protoc.exe
